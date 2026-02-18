@@ -64,6 +64,13 @@ int main() {
 
     printf("Digite o número de pontos turísticos descrito na carta: \n");
     scanf("%d", &carta2turismo);
+    
+    printf("    Dados das cartas 1 e 2: \n");
+    printf("   CARTA1 \n");
+
+    printf("Estado: %s", carta1estado);
+    printf("Código: %s", carta1codigo);
+    printf("Cidade: %s", carta1cidade);
 
 
 
@@ -74,6 +81,7 @@ int main() {
 
 
 
+   return 0;
 
 
 
@@ -82,6 +90,5 @@ int main() {
 
 
 
-    return 0;
-}
+    }
 
