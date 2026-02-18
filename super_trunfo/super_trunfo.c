@@ -2,6 +2,8 @@
 
 int main() {
 
+    
+
     char carta1estado [10];
     char carta1codigo [4];
     char carta1nome [10];
@@ -72,8 +74,8 @@ int main() {
     printf("Código: %s \n", carta1codigo);
     printf("Cidade: %s \n", carta1nome);
     printf("População: %d \n", carta1populacao);
-    printf("Área Total: %f \n" , carta1area);
-    printf("PIB: %f \n" , carta1pib);
+    printf("Área Total: %.2fkm²\n" , carta1area);
+    printf("PIB: %.4f bilhões de reais\n" , carta1pib);
     printf("Locais Turísticos: %d \n" , carta1turismo);
 
     printf("   CARTA2 \n");
@@ -82,8 +84,8 @@ int main() {
     printf("Código: %s \n", carta2codigo);
     printf("Cidade: %s \n", carta2nome);
     printf("População: %d \n", carta2populacao);
-    printf("Área Total: %f \n" , carta2area);
-    printf("PIB: %f \n" , carta2pib);
+    printf("Área Total: %.2fkm² \n" , carta2area);
+    printf("PIB: %.3f bilhões de reais\n" , carta2pib);
     printf("Locais Turísticos: %d \n" , carta2turismo);
 
     
