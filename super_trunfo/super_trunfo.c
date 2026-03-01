@@ -24,11 +24,7 @@ int main() {
     float carta2pibpercapta;
     int  carta2turismo;
 
-    carta1densidadepop = (float) (carta1populacao / carta1area);
-    carta1pibpercapta = (float) (carta1pib / carta1populacao);
 
-    carta2densidadepop = (float) (carta2populacao / carta2area);
-    carta2pibpercapta = (float) (carta2pib / carta2populacao);
 
     printf("      DESAFIO SUPER TRUNFO \n");
     printf("   CARTA 1 \n");
@@ -74,10 +70,18 @@ int main() {
     scanf("%f", &carta2area);
 
     printf("Digite o PIB descrito na carta: \n");
-    scanf("%.f", &carta2pib);
+    scanf("%f", &carta2pib);
 
     printf("Digite o número de pontos turísticos descrito na carta: \n");
     scanf("%d", &carta2turismo);
+
+
+    carta1densidadepop =  (carta1populacao / carta1area);
+    carta1pibpercapta =  (carta1pib / carta1populacao);
+
+    carta2densidadepop =  (carta2populacao / carta2area);
+    carta2pibpercapta =  (carta2pib / carta2populacao);   
+      
     
     printf("    Dados das cartas 1 e 2: \n");
     printf("   CARTA1 \n");
@@ -85,7 +89,7 @@ int main() {
     printf("Estado: %s \n", carta1estado);
     printf("Código: %s \n", carta1codigo);
     printf("Cidade: %s \n", carta1nome);
-    printf("População: %f \n", carta1populacao);
+    printf("População: %d \n", carta1populacao);
     printf("Área Total: %.2fkm²\n" , carta1area);
     printf("PIB: %.2f bilhões de reais\n" , carta1pib);
     printf("Locais Turísticos: %d \n" , carta1turismo);
@@ -97,7 +101,7 @@ int main() {
     printf("Estado: %s \n", carta2estado);
     printf("Código: %s \n", carta2codigo);
     printf("Cidade: %s \n", carta2nome);
-    printf("População: %f \n", carta2populacao);
+    printf("População: %d \n", carta2populacao);
     printf("Área Total: %.2fkm² \n" , carta2area);
     printf("PIB: %.2f bilhões de reais\n" , carta2pib);
     printf("Locais Turísticos: %d \n" , carta2turismo);
